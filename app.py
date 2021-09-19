@@ -11,7 +11,7 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
 def gen_frames():  
-      #  while True:
+        while True:
             ret, frame = cap.read()
                    
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
